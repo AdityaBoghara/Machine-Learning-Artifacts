@@ -31,6 +31,15 @@ $J(\beta_0, \beta_1) = \frac{1}{2m} \sum_{i=1}^{m} (\hat{y}_i - y_i)^2$
 The cost function is **convex** for linear regression, which guarantees a **single global minimum**.
 
 ---
+## Convergence Function (Gradient Descent)
+
+### Definition
+The **convergence function** defines how parameters are updated iteratively until the cost function reaches its minimum.
+
+### General Update Rule
+$\beta_j := \beta_j - \alpha \frac{\partial J(\beta)}{\partial \beta_j}$
+
+---
 
 ## Gradient Descent Optimization
 Gradient descent is an **iterative optimization algorithm** used to minimize the cost function by updating parameters in the direction of the negative gradient.
@@ -49,16 +58,6 @@ Where:
 - $\alpha$ = learning rate (controls step size)
 
 This process is repeated until the algorithm converges.
-
----
-
-## Convergence Function (Gradient Descent)
-
-### Definition
-The **convergence function** defines how parameters are updated iteratively until the cost function reaches its minimum.
-
-### General Update Rule
-$\beta_j := \beta_j - \alpha \frac{\partial J(\beta)}{\partial \beta_j}$
 
 ---
 
