@@ -188,6 +188,3 @@ It is not treated as a default production solution unless domain constraints exp
 - **What model I would consider next**  
   Based on the observed failure mode, I would move to polynomial features, regularized linear models such as Ridge or Lasso to address multicollinearity, or non-linear models like decision trees or gradient boosting when linear assumptions break down.
 
-This framing demonstrates applied reasoning and decision-making, which interviewers value more than memorization.
-
-
