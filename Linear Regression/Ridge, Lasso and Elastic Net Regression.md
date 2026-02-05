@@ -22,7 +22,7 @@ These models are foundational tools in professional machine learning workflows, 
 Ridge regression augments the linear regression loss with an L2 penalty:
 
 
-$ J(\beta) = \|y - X\beta\|^2 + \lambda \|\beta\|_2^2 $
+$J(\beta) = \|y - X\beta\|^2 + \lambda \|\beta\|_2^2$
 
 - The intercept is not penalized.
 - \( \lambda \ge 0 \) controls regularization strength.
