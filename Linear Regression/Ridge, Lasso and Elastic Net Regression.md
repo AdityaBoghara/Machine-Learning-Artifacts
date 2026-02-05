@@ -25,7 +25,7 @@ Ridge regression augments the linear regression loss with an L2 penalty:
 $J(\beta) = \|y - X\beta\|^2 + \lambda \|\beta\|_2^2$
 
 - The intercept is not penalized.
-- \( \lambda \ge 0 \) controls regularization strength.
+- $\( \lambda \ge 0 \)$ controls regularization strength.
 
 ### Key Properties
 
@@ -36,10 +36,7 @@ $J(\beta) = \|y - X\beta\|^2 + \lambda \|\beta\|_2^2$
 
 ### Closed-Form Solution
 
-\[
-\hat{\beta}_{ridge} = (X^TX + \lambda I)^{-1}X^Ty
-\]
-
+$\hat{\beta}_{ridge} = (X^TX + \lambda I)^{-1}X^Ty$
 The added \( \lambda I \) guarantees invertibility even when predictors are highly correlated.
 
 ### When Ridge Is Used
@@ -55,9 +52,7 @@ The added \( \lambda I \) guarantees invertibility even when predictors are high
 
 ### Objective Function
 
-\[
-J(\beta) = \|y - X\beta\|^2 + \lambda \|\beta\|_1
-\]
+$J(\beta) = \|y - X\beta\|^2 + \lambda \|\beta\|_1$
 
 ### Key Properties
 
@@ -77,9 +72,7 @@ J(\beta) = \|y - X\beta\|^2 + \lambda \|\beta\|_1
 
 ### Objective Function
 
-\[
-J(\beta) = \|y - X\beta\|^2 + \lambda_1 \|\beta\|_1 + \lambda_2 \|\beta\|_2^2
-\]
+$J(\beta) = \|y - X\beta\|^2 + \lambda_1 \|\beta\|_1 + \lambda_2 \|\beta\|_2^2$
 
 Elastic Net combines the strengths of Ridge and Lasso.
 
@@ -95,7 +88,7 @@ Elastic Net combines the strengths of Ridge and Lasso.
 ## Hyperparameter Tuning
 
 - Regularization strength selected via cross-validation
-- Log-scale search for \( \lambda \) is standard
+- Log-scale search for $\( \lambda \)$ is standard
 - Feature standardization is mandatory
 - Test data must remain untouched during tuning
 
